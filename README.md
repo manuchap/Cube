@@ -1,5 +1,5 @@
 # Cube
-http://cube.studiowan.fr
+Demo: http://cube.studiowan.fr
 
 LocomotiveCMS template
 
