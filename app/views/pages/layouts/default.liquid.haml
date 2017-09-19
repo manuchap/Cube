@@ -1,0 +1,49 @@
+---
+title: Default
+listed: true
+published: true
+is_layout: true
+display_settings:
+  hidden: true
+---
+!!!
+/
+  Cube by FreeHTML5.co
+  Twitter: http://twitter.com/gettemplateco
+  URL: http://freehtml5.co
+%html
+  %head
+    %title {{ site.seo_title }}
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "{{ site.meta_description }}", :name => "description"}/
+    %meta{:content => "{{ site.meta_keywords }}", :name => "keywords"}/
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    %meta{:content => "free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive", :name => "keywords"}/
+    %meta{:content => "FreeHTML5.co", :name => "author"}/
+    %meta{:content => "", :property => "og:title"}/
+    %meta{:content => "", :property => "og:image"}/
+    %meta{:content => "", :property => "og:url"}/
+    %meta{:content => "", :property => "og:site_name"}/
+    %meta{:content => "", :property => "og:description"}/
+    %meta{:content => "", :name => "twitter:title"}/
+    %meta{:content => "", :name => "twitter:image"}/
+    %meta{:content => "", :name => "twitter:url"}/
+    %meta{:content => "", :name => "twitter:card"}/
+    %link{:href => "https://fonts.googleapis.com/css?family=Raleway:100,300,400,700", :rel => "stylesheet"}/
+    - @links = ['animate', 'icomoon', 'themify-icons', 'bootstrap', 'magnific-popup', 'owl.carousel.min', 'owl.theme.default.min', 'style']
+    - @links.each do |link|
+      {{ '#{link}' | stylesheet_tag }}
+    {{ 'modernizr-2.6.2.min' | javascript_tag }}
+    /[if lt IE 9]
+      {{ 'respond.min' | javascript_tag }}
+  %body
+    .gtco-loader
+    #page
+      {% include 'nav' %}
+      {% block 'main' %}
+      {% endblock %}
+    .gototop.js-top
+      %a.js-gotop{:href => "#"}
+        %i.icon-arrow-up
+    {% include 'scripts %}

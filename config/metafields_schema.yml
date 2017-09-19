@@ -1,0 +1,46 @@
+address:
+  label: Address
+  fields:
+    company:
+      hint: "Your Company"
+      type: string
+    street:
+      hint: "Physical address of your store"
+      type: string
+    city:
+      hint: "City you live in"
+      type: string
+    country:
+      hint: "Country you live in"
+      type: string
+    gmap:
+      hint: "Google map link"
+      type: string
+contacts:
+  label: contacts
+  fields:
+    phone:
+      hint: "Phone number"
+      type: string
+    days:
+      hint: "Opening days"
+      type: string
+    hours:
+      hint: "Opening hours"
+      type: string
+emails:
+  label: emails
+  fields:
+    info:
+      hint: "Customer info"
+      type: string
+    support:
+      hint: "Customer support"
+      type: string
+networks:
+  label: Social Networks
+  fields:
+    facebook:
+      type: string
+    twitter:
+      type: string

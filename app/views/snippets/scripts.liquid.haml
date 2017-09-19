@@ -1,0 +1,8 @@
+- @scripts = ['jquery.min', 'jquery.easing.1.3', 'bootstrap.min', 'jquery.waypoints.min', 'owl.carousel.min', 'jquery.magnific-popup.min', 'magnific-popup-options', 'main']
+- @scripts.each do |script|
+  {{ '#{script}' | javascript_tag }}
+{% if page.fullpath contains 'contact' %}
+%script{:src => "https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"}
+{{ 'google_map' | javascript_tag }}
+{% endif %}
+

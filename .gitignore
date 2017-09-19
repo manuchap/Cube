@@ -1,0 +1,8 @@
+
+config/deploy.yml
+
+Gemfile.lock
+
+log/
+
+Gemfile
